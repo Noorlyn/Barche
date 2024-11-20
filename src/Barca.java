@@ -39,7 +39,18 @@ public class Barca {
 
     }
 
-    
+    public int Menu()
+    {
+        Scanner Answer = new Scanner(System.in);
+        System.out.println("Cosa desidera fare adesso?\n\n");
+        System.out.println("(1)Prendere un posto\n");
+        System.out.println("(2)Andarsene e pagare\n");
+        System.out.println("(3) Sapere le informazioni della barca in un posto\n");
+        System.out.println("(4) Arrivederci e alla prossima\n\n");
+        int numero = Answer.nextInt();
+        return numero;
+        
+    }
 
     
 }

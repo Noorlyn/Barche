@@ -7,9 +7,11 @@ public class Porto {
     void Posizioni(ArrayList<String> posti)
     {
 
-        for (int i = 0; i < 100; i++) 
+        for (int i = 1; i <= 100; i++) 
         {
-            posti.add(" ");
+            posti.add(i, " ");
+            i++;
+            posti.add(i, "occupato");
         }
 
     }
@@ -18,14 +20,25 @@ public class Porto {
     {
         if (Tipologia_Barca == "vela" || Tipologia_Barca == "Vela")
         {
-            for (int i = 50; i <= 100; i++)
+            for (int i = 50; i <= 100; i++ )
             {
-                if ( posti = " " )
+                if (posti(i) == "occupato")
                 {
-
+                    System.out.println("questo posto è occupato, cercheremo un altro");
+                }
+                else
+                {
+                    posti.add(i, "posto assegnato");
                 }
             }
+            
+            
         }
+    }
+
+    public void Porto() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'Porto'");
     }
 
     
